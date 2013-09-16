@@ -23,6 +23,8 @@ public class AboutActivity extends BaseActivity {
 		setContentView(R.layout.about);
 		
 		header.setTitle("更多");
+		
+		System.out.println("fuck---------");
 	}
 	
 }
