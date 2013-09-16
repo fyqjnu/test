@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnDingChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要订场" />
+
+        <Button
+            android:id="@+id/btnBaoMing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我要报名" />
+    </LinearLayout>
+    
+    <cn.leyundong.custom.TabTitle
+        android:id="@+id/tt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+	<ViewFlipper 
+	    android:id="@+id/vf"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    <include layout="@layout/dingchang_page1"/>
+	    
+	</ViewFlipper>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|center_horizontal"
+        >
+        <Button 
+            android:layout_marginBottom="20dp"
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            />
+    </LinearLayout>
+</LinearLayout>

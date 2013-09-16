@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+    
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码：" />
+
+        <EditText
+            android:text="18675828227"
+            android:id="@+id/etNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" >
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <CheckBox
+        android:checked="true"
+        android:id="@+id/cbProtocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我已阅读并同意《 乐运动服务协议》" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="向我发送验证码" />
+
+</LinearLayout>

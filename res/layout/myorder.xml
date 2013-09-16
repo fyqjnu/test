@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+            android:id="@+id/tvMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="您预订的费用100元"
+            />
+        
+        <Button 
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空预订"
+            />
+        
+        
+    </LinearLayout>
+        <ListView 
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></ListView>
+    <LinearLayout 
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        
+        <Button 
+            android:id="@+id/btnXuDing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="续订"
+            />
+        
+        
+        <Button 
+            android:id="@+id/btnPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付"
+            />
+    </LinearLayout>
+</LinearLayout>

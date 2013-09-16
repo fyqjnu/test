@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/LinearLayout1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="账号:"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:text="a123456"
+            android:id="@+id/etAccount"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <requestFocus></requestFocus>
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout2"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:text="密码:"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:text="123456"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:id="@+id/etMiMa"
+            android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:text="登录"
+        android:id="@+id/btnLogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"></Button>
+
+    <CheckBox
+        android:checked="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/cbAutoLogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下次自动登录" />
+
+    <LinearLayout
+       	android:padding="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册账号" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tvFindPW"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回密码" />
+
+    </LinearLayout>
+
+</LinearLayout>

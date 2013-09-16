@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="场馆名称：" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+        <LinearLayout
+            android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="日期：" />
+
+        <cn.leyundong.custom.DateTextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="TextView" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="场地类型：" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:gravity="right"
+            android:textSize="20sp"
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:text="区域：" />
+
+        <Spinner
+            android:id="@+id/spinnerArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6" />
+
+    </LinearLayout>
+
+</LinearLayout>

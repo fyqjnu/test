@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btnTab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理" />
+
+        <Button
+            android:id="@+id/btnTab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动" />
+
+        <Button
+            android:id="@+id/btnTab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="财务" />
+        
+    </LinearLayout>
+    <cn.leyundong.custom.TabTitle
+        android:id="@+id/tabTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         />
+
+    <FrameLayout
+        android:id="@+id/clubframelayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

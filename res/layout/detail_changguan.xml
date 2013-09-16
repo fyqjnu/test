@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/tvDiZhi"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆地址：" />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tvDianHuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话：" />
+
+
+                <TextView
+                    android:textSize="16sp"
+                    android:paddingRight="80dp"
+                    android:id="@+id/tvShuLiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场地数量：" />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tvJiaGe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="场馆价格：" />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tvShiJian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业时间：" />
+                <TextView
+                    android:textSize="16sp"
+                    android:id="@+id/tvGongJiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公交站点：" />
+
+				<TextView 
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+				    android:background="#ff000000"
+				    />
+
+				<TextView
+				    android:textSize="16sp"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="场馆详情：" />
+
+				<TextView
+				    android:id="@+id/tvXiangQing"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="TextView" />
+
+				<TextView
+				    android:layout_marginTop="10dp"
+				    android:layout_width="fill_parent"
+				    android:layout_height="1dp"
+					android:background="#ff000000"				    
+				    />
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="场馆俱乐部：" />
+
+				<TextView
+				    android:textSize="16sp"
+				    android:id="@+id/tvJuLeBu"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="" />
+
+        </LinearLayout>
+        
+         <Button 
+             android:id="@+id/btnDingChang"
+             android:layout_alignParentRight="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginRight="20dp"
+             android:layout_marginTop="50dp"
+             android:text="预订"
+             />
+
+    </RelativeLayout>
+
+</LinearLayout>

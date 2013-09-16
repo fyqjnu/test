@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.leyundong.view.Header
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </cn.leyundong.view.Header>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前账户:"
+                android:textSize="18sp" />
+
+            <ViewFlipper
+                android:id="@+id/vf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:id="@+id/tvLogin"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aaaa"
+                    android:textSize="20sp" />
+                
+                <Button 
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登录"
+                    />
+                
+            </ViewFlipper>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLoginOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出登录" />
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="客服电话:020-66634278"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnCheckUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新" />
+
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于我们" />
+    </LinearLayout>
+
+</LinearLayout>

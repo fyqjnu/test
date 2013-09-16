@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+    
+    <cn.leyundong.view.Header 
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ></cn.leyundong.view.Header>
+    
+    <ViewFlipper 
+        android:id="@+id/vf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+       
+        
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="俱乐部编号:"/>
+        <Spinner 
+            android:id="@+id/spinnerClubId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="活动场馆:"/>
+         <LinearLayout 
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            >
+            <requestFocus />
+        </LinearLayout>
+        <EditText 
+            android:id="@+id/etHuodongchangguan"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="活动日期:"/>
+        <cn.leyundong.custom.DateTextView 
+            android:id="@+id/tvDate"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+        
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="活动时间:"/>
+        
+           <cn.leyundong.custom.TimeTextView 
+              android:layout_marginLeft="10dp"
+            android:id="@+id/tvTimeFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            /> 
+            
+           <TextView 
+               android:layout_margin="3dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="到"
+               />
+           
+           <cn.leyundong.custom.TimeTextView 
+            android:id="@+id/tvTimeTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="人数限制:"/>
+        <EditText 
+            android:inputType="number"
+            android:id="@+id/etRenshuxianzhi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="活动价格:"/>
+        <EditText 
+            android:id="@+id/etPrice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="最迟取消时间:"/>
+        <EditText 
+            android:inputType="number"
+            android:id="@+id/etQuxiaoshijian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="截止报名时间:"/>
+        <EditText 
+            android:inputType="number"
+            android:id="@+id/etBaomingshijian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="活动说明:"/>
+        <EditText 
+            android:gravity="top|left"
+            android:id="@+id/etHuodongshuoming"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"/>
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btnCreateHuoDong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="创建"/>
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="说明:长定活动，将在活动完成后第二天自动产生下一周相同星期和时间的活动"/>
+            </LinearLayout>
+    </ScrollView>
+    </ViewFlipper>
+</LinearLayout>

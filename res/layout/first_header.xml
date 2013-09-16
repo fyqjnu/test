@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="登录" />
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:id="@+id/tvCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/tvLogin"
+        android:text="广州" />
+
+</RelativeLayout>

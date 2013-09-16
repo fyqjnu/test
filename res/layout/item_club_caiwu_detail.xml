@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/tvName" android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" android:text="张三"/>
+    <LinearLayout 
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView 
+            style="@style/item_field_title"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="收支日期:"/>
+        <TextView
+            android:id="@+id/tvDate" 
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="2013-08-31"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/item_field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收支类型:" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2013-08-31" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/item_field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收支金额:" />
+
+        <TextView
+            android:id="@+id/tvMoney1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2013-08-31" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/item_field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总金额:" />
+
+        <TextView
+            android:id="@+id/tvMoney2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2013-08-31" />
+    </LinearLayout>
+
+
+</LinearLayout>

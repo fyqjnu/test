@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="id_btn_cancel" format="integer">0</item>
+    <item type="id" name="id_btn_create_huodong" format="integer">0</item>
+    
+</resources>

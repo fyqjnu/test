@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">lyd</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="first_tab">首页</string>
+    <string name="second_tab">预订</string>
+    <string name="third_tab">俱乐部</string>
+    <string name="four_tab">会员</string>
+    <string name="five_tab">更多</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@drawable/selector_tabwidget_bg"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:id="@+id/re_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0.5dip">
+        <ImageView
+            android:background="#00000077"
+            android:layout_gravity="center"
+            android:id="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="41.0dip"
+            android:layout_marginTop="5.0dip" />
+        <TextView
+            android:text="text"
+            android:textColor="@color/tabwidget_font"
+            android:layout_centerHorizontal="true"
+            android:background="#00770000"
+            android:textSize="11.0sp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:id="@+id/text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38.0dip"
+            
+            />
+           <!--  android:shadowColor="#ff000000"
+            android:shadowDy="-1.0"
+            android:shadowRadius="1.0"  -->
+    </RelativeLayout>
+</LinearLayout>
