@@ -24,7 +24,6 @@ public class AboutActivity extends BaseActivity {
 		
 		header.setTitle("更多");
 		
-		System.out.println("fuck---------");
 	}
 	
 }
