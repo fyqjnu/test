@@ -1,0 +1,10 @@
+diff a/src/cn/leyundong/activity/AboutActivity.java b/src/cn/leyundong/activity/AboutActivity.java	(rejected hunks)
+@@ -23,6 +23,8 @@
+ 		setContentView(R.layout.about);
+ 		
+ 		header.setTitle("更多");
++		
++		System.out.println("fuck---------");
+ 	}
+ 	
+ }
