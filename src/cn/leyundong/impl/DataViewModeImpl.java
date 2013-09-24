@@ -9,6 +9,8 @@ public class DataViewModeImpl implements IDataViewModel {
 	private ViewFlipper mFlipper;
 	private ProgressView mProgressView;
 	
+	
+	
 	/**
 	 * viewflipper 0层放data， 1层放progressview
 	 * @param vf
